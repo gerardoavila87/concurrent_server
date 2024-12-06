@@ -1,6 +1,6 @@
 import requests
 
-base_url = "http://127.0.0.1:5005"  # Cambia el puerto si es necesario
+base_url = "http://127.0.0.1:5005"
 endpoints = [
     "/index.html",
     "/about.html",
