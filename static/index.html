@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Static File Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #5d9ab2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .center_div {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #d0f0f6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .images img {
+            max-width: 30%;
+            height: auto;
+            border: 2px solid #5d9ab2;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #5d9ab2;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>¡Bienvenido al servidor de archivos estáticos de Rust!</h1>
+    </header>
+
+    <div class="center_div">
+        <h2>Acerca de este sistema</h2>
+        <p>
+            Este sistema demuestra un servidor de archivos estático simultáneo implementado en Rust. El servidor está
+            diseñado para:
+        </p>
+        <ul>
+            <li>Sirve HTML, imágenes y otros archivos estáticos desde el directorio<code>static</code>.</li>
+            <li>Maneje múltiples solicitudes simultáneamente utilizando las capacidades de subprocesamiento de Rust.
+            </li>
+            <li>Muestre un manejo eficiente de errores para solicitudes faltantes o no válidas.</li>
+        </ul>
+        <p>A continuación se muestran algunas imágenes de muestra que se sirven directamente desde el servidor estático:
+        </p>
+
+        <div class="images">
+            <img src="http://localhost:8080/img_1.jpg" alt="Image 1">
+            <img src="http://localhost:8080/img_2.jpg" alt="Image 2">
+            <img src="http://localhost:8080/img_3.jpg" alt="Image 3">
+        </div>
+        <div class="images">
+            <p>http://localhost:8080/img_1.jpg</p>
+            <p>http://localhost:8080/img_2.jpg</p>
+            <p>http://localhost:8080/img_3.jpg</p>
+        </div>
+    </div>
+</body>
+
+</html>
